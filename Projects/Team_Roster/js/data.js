@@ -71,6 +71,11 @@ const content = [{
   keywords: ['Monster Spawner','覆盖','亞修','亞比','拔剌','沁風 翼','馬哈'],
   preview: 'rosters/MS.png'
 }, {
+  title: '夜貓嵐玥',
+  description: '按下游戏，开始我们的奇妙旅程～',
+  keywords: ['☆NightCat☆','小枫','佳佳','俊峰','江','智'],
+  preview: 'rosters/NC.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
