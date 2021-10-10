@@ -27,11 +27,11 @@
             </fieldset>
             <fieldset>
                 <h4>沒說話時的照片亮度：</h4>
-                <input type="range" id="normal-image-brightness" name="normal-image-brightness" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                <output>100</output>
-                <h4>說話時的照片亮度：</h4>
-                <input type="range" id="talking-image-brightness" name="talking-image-brightness" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                <input type="range" id="normal-image-brightness" name="normal-image-brightness" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
                 <output>50</output>
+                <h4>說話時的照片亮度：</h4>
+                <input type="range" id="talking-image-brightness" name="talking-image-brightness" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                <output>100</output>
                 <h4>說話時的照片跳動幅度：</h4>
                 <input type="range" id="talking-image-bounce" name="talking-image-bounce" min="0" max="50" value="10" oninput="this.nextElementSibling.value = this.value">
                 <output>10</output>
