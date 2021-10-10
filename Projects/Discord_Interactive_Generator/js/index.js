@@ -28,7 +28,7 @@ function generateCSS() {
     height:auto !important;
     width:auto !important;
     border-radius:0% !important;
-    filter: brightness(${normalImageBrightness}%); 
+    filter: brightness(${talkingImageBrightness}%); 
   }
   
   .speaking {
@@ -38,7 +38,7 @@ function generateCSS() {
     animation-name: speak-now;
     animation-duration: 1s;
     animation-fill-mode:forwards;
-    filter: brightness(${talkingImageBrightness}%);
+    filter: brightness(${normalImageBrightness}%);
   }
   
   ${animate}
