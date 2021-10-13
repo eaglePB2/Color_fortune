@@ -76,6 +76,11 @@ const content = [{
   keywords: ['☆NightCat☆','小枫','佳佳','俊峰','江','智'],
   preview: 'rosters/NC.png'
 }, {
+  title: '藍櫻遊戲團隊',
+  description: '“這個團體並沒有保留任何的簡介……”',
+  keywords: ['BlueSakura Game Team','消遣','靈靈','水流','哞','樹仔','木材','虛吧','ERO','MUJO'],
+  preview: 'rosters/BSGT.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
