@@ -17,10 +17,6 @@ fetch(url)
 function displaythought(index, data) {
     let thought = document.getElementById("thought");
 
-    if (data[index].author == null) {
-        data[index].author = "unknown";
-    }
-
     let htmlthought = `<div class="alert alert-outline-primary">
 			${data[index].text}<br>
 		</div>`;
