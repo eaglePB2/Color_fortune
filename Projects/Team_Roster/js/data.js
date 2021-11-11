@@ -81,6 +81,11 @@ const content = [{
   keywords: ['BlueSakura Game Team','消遣','靈靈','水流','哞','樹仔','木材','虛吧','ERO','MUJO'],
   preview: 'rosters/BSGT.png'
 }, {
+  title: 'Kaguya Studio',
+  description: '已知現象：活躍於steam的幻想鄉，台灣分支，是2005年就已經活躍的實況團隊？',
+  keywords: ['Kaguya Studio','日向綾','望月梢（願晴‧雨希‧望月稍）'],
+  preview: 'rosters/KS.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
