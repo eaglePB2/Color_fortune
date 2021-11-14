@@ -4,26 +4,29 @@ function generateCSS() {
     var talkingImageURL = document.getElementById("talking-image-url").value || normalImageURL;
     var normalImageBrightness = document.getElementById("normal-image-brightness").value || 50;
     var talkingImageBrightness = document.getElementById("talking-image-brightness").value || 100;
-    var talkingImageBounce = document.getElementById("talking-image-bounce").value || 10
+    var talkingImageBounce = document.getElementById("talking-image-bounce").value || 10;
 
-    if (document.getElementById('normal').checked) {
+    if (document.getElementById("normal").checked) {
         var animate = `@keyframes speak-now {
-            0% { bottom:0px;  }
+            0% { transform: translateY(0);  }
           }
-        `
-    } else if (document.getElementById('boing').checked) {
+        `;
+    } else if (document.getElementById("boing").checked) {
         animate = `@keyframes speak-now {
             0% { bottom:0px; }
             15% { bottom:${talkingImageBounce}px; }
             30% { bottom:0px; }
           }
-        `
-    } else if (document.getElementById('inf_boing').checked) {
-        animate = `@keyframes speak-now {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(${talkingImageBounce}px); }
-          }
-        `
+        `;
+    } else if (document.getElementById("inf_boing").checked) {
+        animate = `
+        @keyframes speak-now {
+            0%,
+  	        50%,
+            100% { transform: translateY(0); }
+            25% { transform: translateY(-${talkingImageBounce}px); }
+  	        75% { transform: translateY(${talkingImageBounce}px); }
+            }`;
     }
 
     // You can customize the generated CSS by modifying the following template string.
