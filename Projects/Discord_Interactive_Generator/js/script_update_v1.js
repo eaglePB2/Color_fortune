@@ -22,7 +22,6 @@ function generateCSS() {
         animate = `
         @keyframes speak-now {
             0%,
-  	        50%,
             100% { transform: translateY(0); }
             25% { transform: translateY(-${talkingImageBounce}px); }
   	        75% { transform: translateY(${talkingImageBounce}px); }
