@@ -24,6 +24,7 @@ function generateCSS() {
             50% { transform: translateY(${talkingImageBounce}px); }
           }
         `
+    }
 
     // You can customize the generated CSS by modifying the following template string.
     var cssString = `
