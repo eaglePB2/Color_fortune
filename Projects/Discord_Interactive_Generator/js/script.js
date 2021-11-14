@@ -18,7 +18,12 @@ function generateCSS() {
             30% { bottom:0px; }
           }
         `
-    }
+    } else if (document.getElementById('inf_boing').checked) {
+        animate = `@keyframes speak-now {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(${talkingImageBounce}px); }
+          }
+        `
 
     // You can customize the generated CSS by modifying the following template string.
     var cssString = `
