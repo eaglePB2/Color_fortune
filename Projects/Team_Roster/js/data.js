@@ -19,7 +19,7 @@ const content = [{
   title: 'Vortex',
   description: 'Return to us. Our mission has yet to be completed.',
   keywords: [],
-  preview: 'rosters/vortex.png'
+  preview: 'rosters/Vortex.png'
 }, {
   title: 'The Earth',
   description: 'Earth is Amazing. As always.',
