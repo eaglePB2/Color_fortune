@@ -86,6 +86,11 @@ const content = [{
   keywords: ['Kaguya Studio','日向綾','望月梢（願晴‧雨希‧望月稍）'],
   preview: 'rosters/KS.png'
 }, {
+  title: 'Horoscopegaming - HRP',
+  description: 'We are from Horoscopegaming!!!We will try post something in this page,Thx for like&share~~',
+  keywords: ['Horoscopegaming','MELVIN QAQ','紫邪 bruselim','7RDX⍟伟正','days7389'],
+  preview: 'rosters/HRP.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
