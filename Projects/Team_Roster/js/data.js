@@ -91,6 +91,11 @@ const content = [{
   keywords: ['Horoscopegaming','MELVIN QAQ','紫邪 bruselim','7RDX⍟伟正','days7389'],
   preview: 'rosters/HRP.png'
 }, {
+  title: 'WTOS實況團隊',
+  description: '大家好，我們是WTOS實況團隊，我是團長晨夏（原名：月琉璃）我們是超級輕鬆的團隊，只要你能夠大家好好相處，我們歡迎你/妳的加入',
+  keywords: ['WanTonly OccaSion .Studio','晨夏','票風','語雷','楓葉','阿祖','語雷','楓葉','阿祖','嵐','軍師','冥','迪芯','未來','云朵','嵐凝','罪風','夢奈','抹茶','憂樂','神羽','蛇','黑凜','喵鵝','莉亞','亦亞','櫻太','日映','伊寒','蔥'],
+  preview: 'rosters/WTOS.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
