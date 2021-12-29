@@ -96,6 +96,11 @@ const content = [{
   keywords: ['WanTonly OccaSion .Studio','晨夏（月琉璃）','票風','語雷','楓葉','阿祖','語雷','楓葉','阿祖','嵐','軍師','冥','迪芯','未來','云朵','嵐凝','罪風','夢奈','抹茶','憂樂','神羽','蛇','黑凜','喵鵝','莉亞','亦亞','櫻太','日映','伊寒','蔥'],
   preview: 'rosters/WTOS.png'
 }, {
+  title: '萩露家族',
+  description: '歡迎來到萩露家族，這裡是來自 FB 的製圖朋友。 以下是我們大力推薦的製圖好專頁們 //',
+  keywords: ['SyuuRo','⊰ 空白筆記本 ⊱','玫蜜 ✪ Asami','小孩子 ✪ Child','鬼樱','幽語 ✪ Yuka'],
+  preview: 'rosters/SRO.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
