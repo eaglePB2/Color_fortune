@@ -101,6 +101,11 @@ const content = [{
   keywords: ['SyuuRo','⊰ 空白筆記本 ⊱','玫蜜 ✪ Asami','小孩子 ✪ Child','鬼樱','幽語 ✪ Yuka'],
   preview: 'rosters/SRO.png'
 }, {
+  title: '唐雨工作室 DRS',
+  description: '嘿！大家好，歡迎來到唐雨工作室！我們製作各式各樣的遊戲影片，涵蓋了?',
+  keywords: ['Don rain Studio','零影','蜜蜂','放肆','濃湯','貓耳','小蓁','凡哥','史蒂夫','藤堂優'],
+  preview: 'rosters/DRS.png'
+}, {
   title: '这是模板',
   description: '这模板是用来记录老鹰考古过的已解散团体，顺便怀念一下时代的感伤。',
   keywords: ['考古系列'],
