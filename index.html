@@ -1,289 +1,109 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN" id="bgimg">
 
 <head>
-    <!-- Must add to enable the lang sup -->
-    <meta charset="utf-8">
-    <!-- Stylesheet zone -->
-    <link rel="stylesheet" type="text/css" href="CSS/main.css">
-    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
-    <link rel="stylesheet" type="text/css" href="CSS/vault.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <!-- Icon and titles -->
-    <link rel="icon" href="image/icon.png">
-    <title>鹰の网页</title>
-    <!-- Must add if we want to support mobiles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 鹰的主页 </title>
+
+    <!--完整版meta战队！-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这啥，这网页有很多秘密诶？">
+    <meta name="keywords" content="-">
+
+    <!--不来个动图插图怎么行呢awa-->
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="bookmark" href="style/favicon.png">
+
+    <!--css一个就好 太多对身体不好-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <!--彩蛋：网页闲置太久他就会叫-->
+    <script type="text/javascript" src="js/timeout.js"></script>
+    <!--换背景-->
+    <script type="text/javascript" src="js/backgroundAPI.js"></script>
+    <!--加一个萤火虫模式-->
+    <script type="text/javascript" src="js/firefly.js"></script>
+    <!--这部分是禁止网页右键-->
+    <script type="text/javascript" src="js/norightclick.js"></script>
+    <!--彩蛋：会动的URL-->
+    <script type="text/javascript" src="js/moonphases.js"></script>
+    <!--随机名言-->
+    <script type="text/javascript" src="js/quotes.js"></script>
+
+    <!--Header 起头难-->
+    <div style="text-align:center;clear:both"></div>
+    <div class="tooltips"></div>
 </head>
 
 <body>
-    <!-- Main Content -->
-    <main class="main-content">
+    <iframe src="style/sound.mp3" type="audio/mpeg" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <audio autoplay loop  id="playAudio">
+        <source src="style/sound.mp3">
+    </audio>
+    <div id="top">
+        <main id="top_main">
 
-        <!-- Right top corner -->
-        <div class="masthead">
-
-            <div class="logo">
-                <h1>鹰の网页主页部</h1>
+            <div id="top_logo"><img id="mainimg" src="style/toplogo.png" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
+            <!--
+            <div id="top_title"><img id="top_title01" alt="但愿与你，独立又亲密" src="style/toptitle01.png">
+                <hr class="top_hr_style01">
+                <img id="top_title02" alt="但愿与你，独立又亲密" src="style/top_title02.png">
             </div>
+            -->
 
-            <div class="vault-search">
-                <form>
-                    <input type="search" class="search-input" placeholder="查找资讯" aria-label="search vault">
-                    <i class="fas fa-search search-icon" aria-hidden="true"></i>
-                </form>
+            <ul id="top_navlist">
+                <a class="top_nav " target="_blank" href="/webpages">
+                    <li>本家仓库</li>
+                </a>
+                <a class="top_nav " target="_blank" href="https://forestwork.net">
+                    <li>林间小镇</li>
+                </a>
+            </ul>
+        </main>
+
+        <!--转啊转啊七彩霓虹灯-->
+        <script>
+            function mouseOver() {
+                document.getElementById("mainimg").src = "https://pic.imgdb.cn/api/avatar";//鼠标悬浮时的旋转图标
+            }
+            function mouseOut() {
+                document.getElementById('mainimg').src = "style/toplogo.png"//默认的旋转图标
+            }
+        </script>
+
+    </div>
+
+    <footer id="top_footer">
+        <span id="top_copyright">
+            <hr class="top_hr_style02">
+            <div id="thought">
+                当你看到这个句子，大概率他故障了030
             </div>
+            <hr class="top_hr_style02">　
+            Copyright © 2015-2077 All Rights Reserved
+        </span>
+    </footer>
 
-            <div class="user-settings" tabindex="0" aria-label="User Settings">
-                <div class="user-image">
-                    <i class="fas fa-user-circle" aria-hidden="true"></i>
-                </div>
-                <ul class="user-info">
-                    <li class="user-email">eagleforceleader@hotmail.com</li>
-                    <li class="user-type">這是什麼？</li>
-                </ul>
-                <div class="user-arrow-btn">
-                    <i class="fas fa-caret-down" aria-hidden="true"></i>
-                </div>
-            </div>
-
-        </div>
-        <!-- Vault items controls-->
-        <div class="vault-items-controls">
-
-            <h2>网页作品</h2>
-
-            <button class="vault-items-controls-btn btn" aria-label="Collapse Items" title="Collapse Items">
-                <i class="fas fa-caret-up" aria-hidden="true"></i>
-            </button>
-
-            <button class="vault-items-controls-btn btn" aria-label="Compact View" title="Compact View">
-                <i class="fas fa-search-minus" aria-hidden="true"></i>
-            </button>
-
-            <div class="vault-items-controls-group">
-
-                <button class="vault-items-controls-btn btn current" aria-label="Grid View" title="Grid View">
-                    <i class="fas fa-th-large" aria-hidden="true"></i>
-                </button>
-
-                <button class="vault-items-controls-btn btn" aria-label="List View" title="List View">
-                    <i class="fas fa-list" aria-hidden="true"></i>
-                </button>
-
-            </div>
-
-            <button class="vault-items-controls-btn btn" aria-label="Sort Options" title="Sort Options">
-                <i class="fas fa-sort" aria-hidden="true"></i>
-            </button>
-
-        </div>
-        <!-- End of vault items controls-->
-        <!-- more content here -->
-        <!-- Vault items container -->
-        <div class="vault-items-container">
-
-            <div class="vault-item payment-card-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-cog" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Training/index.html">
-                        <h3 class="vault-item-name">DIV Test</h3>
-                        <h4 class="vault-item-summary">第一次学网页的成果</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item password-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fab fa-buromobelexperte" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Colour_of_fortune/index.html">
-                        <h3 class="vault-item-name">Color Of Fortune</h3>
-                        <h4 class="vault-item-summary">一个迷你游戏 猜颜色</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item bank-account-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-columns" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Website_project_school/index.html">
-                        <h3 class="vault-item-name">Website Assignment</h3>
-                        <h4 class="vault-item-summary">高中的合作网页企划</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item social-security-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-align-left" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/To-do-list/index.html">
-                        <h3 class="vault-item-name">To-Do-List</h3>
-                        <h4 class="vault-item-summary">没有链接去伺服器的代办事项</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item wifi-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-dice-d20" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Lucky_draw/index.html">
-                        <h3 class="vault-item-name">Lucky Draw</h3>
-                        <h4 class="vault-item-summary">很基础的抽奖系统</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item drivers-licence-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-book-reader" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Quote/index.html">
-                        <h3 class="vault-item-name">名言产生器</h3>
-                        <h4 class="vault-item-summary">从我和身边的朋友自行领悟出来的名言(#</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item note-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-history" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Team_Roster/index.html">
-                        <h3 class="vault-item-name">团队考古记录</h3>
-                        <h4 class="vault-item-summary">从2016年考古到现在的记录名单</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item passport-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Discord_Interactive_Generator/index.html">
-                        <h3 class="vault-item-name">Discord Reactive Image</h3>
-                        <h4 class="vault-item-summary">因为之前常用的网站倒了 所以就自己做了一套出来……</h4>
-                    </a>
-                </div>
-            </div>
-
-            <div class="vault-item medical-item" tabindex="0">
-                <div class="vault-item-thumbnail">
-                    <i class="fas fa-images" aria-hidden="true"></i>
-                </div>
-                <div class="vault-item-info">
-                    <a style="text-decoration:none" href="Projects/Youtube_Thumbnail_Grabber/index.html">
-                        <h3 class="vault-item-name">Youtube Thumbnail Grabber</h3>
-                        <h4 class="vault-item-summary">Youtube缩略图提取器</h4>
-                    </a>
-                </div>
-            </div>            
-            <!-- <button class="add-vault-item-btn btn" aria-label="Add Item" title="Add Item"><span aria-hidden="true">+</span></button>-->
-
-        </div>
-        <!-- End of vault items container -->
-
-    </main>
-    <!-- End of main content -->
-    <!-- Sidebar -->
-    <nav class="sidebar">
-
-        <button class="collapse-btn menu-btn btn" aria-label="Expand Menu" title="Expand Menu">
-            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </button>
-
-        <div class="vault-controls-menu">
-
-            <div class="vault-menu-group">
-                
-                <button class="menu-btn btn current" aria-label="Driver's Licenses" title="老鷹">
-                    <i class="fas fa-crow" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Passwords" onclick="window.location.href='https://www.youtube.com/channel/UCGMrFIADQ5n5EzgNwJ9FZPQ';" title="老鷹的Youtube">
-                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Notes" onclick="window.location.href='https://www.twitch.tv/eaglepb2';" title="老鷹的Twitch">
-                    <i class="fab fa-twitch" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Addresses" onclick="window.location.href='https://github.com/eaglePB2';" title="老鷹的Github">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                </button>
-
-            </div>
-
-            <div class="vault-menu-group">
-
-                <button class="menu-btn btn" aria-label="Payment Cards" onclick="window.location.href='https://forestwork.net/';" title="林間小鎮">
-                    <i class="fas fa-tree" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Bank Accounts" onclick="window.location.href='https://forestwork.net/Youtube';" title="林間小鎮的Youtube">
-                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                </button>
-                
-                <button class="menu-btn btn" aria-label="Passports" onclick="window.location.href='https://forestwork.net/Facebook';" title="林間小鎮的Facebook主頁">
-                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Social Security Numbers" onclick="window.location.href='https://forestwork.net/Twitter';" title="林間小鎮的Twitter">
-                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
-                </button>
-
-                <button class="menu-btn btn" aria-label="Health Insurance Policies" onclick="window.location.href='https://forestwork.net/Discord';" title="林間小鎮的Discord">
-                    <i class="fab fa-discord" aria-hidden="true"></i>
-                </button>
-<!--
-                <button class="menu-btn btn" aria-label="Wi-Fi Passwords" onclick="window.location.href='https://github.com/eaglePB2';" title="林間小鎮的">
-                    <i class="fab fa-" aria-hidden="true"></i>
-                </button>
- -->
-            </div>
-
-        </div>
-
-        <div class="vault-settings-menu">
-
-            <button class="menu-btn btn" aria-label="Security Challenge" title="Security Challenge">
-                <i class="fas fa-shield-alt" aria-hidden="true"></i>
-            </button>
-
-            <button class="menu-btn btn" aria-label="Sharing Center" title="Sharing Center">
-                <i class="fas fa-users" aria-hidden="true"></i>
-            </button>
-
-            <button class="menu-btn btn" aria-label="Emergency Access" title="Emergency Access">
-                <i class="fas fa-life-ring" aria-hidden="true"></i>
-            </button>
-
-            <button class="menu-btn btn" aria-label="Account Settings" title="Account Settings">
-                <i class="fas fa-cog" aria-hidden="true"></i>
-            </button>
-
-            <button class="menu-btn btn" aria-label="More Options" title="More Options">
-                <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
-            </button>
-
-        </div>
-
-    </nav>
-    <!-- End of sidebar -->
-    <script src="JS/timeout.js"></script>
+    <script type="text/javascript">
+        $.firefly({
+            color: '#FFDF3C',
+            ofTop: 0,
+            ofLeft: 0,
+            twinkle: 0.2, 
+            minPixel: 4,
+            maxPixel: 1,
+            total: 100,
+            on: 'document.body',
+            _paused: false
+            //color: '#FFF121',
+        });
+    </script>
 </body>
+
 </html>
-<!-- had to force myself to update this html because of... uhhhh -->
