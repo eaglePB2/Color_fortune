@@ -46,19 +46,20 @@
     <div id="top">
         <main id="top_main">
 
-            <div id="top_logo"><img id="mainimg" alt="图片载入失败，请大侠重新来过。" src="style/toplogo.png" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
-            
-            <div id="top_title"><img id="top_title01" alt="图片载入失败，请大侠重新来过。" src="style/toptitle.png">
+            <div id="top_logo"><img id="mainimg" src="style/toplogo.png" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
+
+            <div id="top_title"><img id="top_title01" alt="但愿与你，独立又亲密" src="style/toptitle.png">
                 <hr class="top_hr_style01">
-               <!-- <img id="top_title02" alt="但愿与你，独立又亲密" src="style/top_title02.png">-->
+            <!--
+                <img id="top_title02" alt="但愿与你，独立又亲密" src="style/top_title02.png">
             </div>
-            
+            -->
 
             <ul id="top_navlist">
-                <a class="top_nav " target="_blank" href="/webpages">
+                <a class="top_nav" target="_blank" href="/webpages">
                     <li>本家仓库</li>
                 </a>
-                <a class="top_nav " target="_blank" href="https://forestwork.net">
+                <a class="top_nav" target="_blank" href="https://forestwork.net">
                     <li>林间小镇</li>
                 </a>
                 <a class="top_nav" target="_blank" href="https://www.twitch.tv/eaglePB2">
@@ -98,12 +99,15 @@
             twinkle: 0.2, 
             minPixel: 4,
             maxPixel: 1,
-            total: 10,
+            total: 100,
             on: 'document.body',
             _paused: false
             //color: '#FFF121',
         });
     </script>
+    <!--这作者说过，一定要放在这里才能启动功能 030-->
+    <script type="text/javascript" color="173,174,173" opacity="1" zindex="-2" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+    <canvas id="c_n10" width="1359" height="969" style="position: fixed; top: 0px; left: 0px; z-index: -2; opacity: 1;"></canvas>
 </body>
 
 </html>
