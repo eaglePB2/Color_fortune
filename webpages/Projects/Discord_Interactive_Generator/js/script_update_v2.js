@@ -32,7 +32,7 @@ function generateCSS() {
             0% { transform:translateY(0) rotate(-5deg);}
             50% { transform:translateY(-${talkingImageBounce}px); ) rotate(0deg);}
             100% { transform:translate(0)rotate(5deg);}
-        `;
+        }`;
 
     // You can customize the generated CSS by modifying the following template string.
     var cssString = `
