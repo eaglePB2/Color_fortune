@@ -9,6 +9,7 @@
 - 但介於該網頁的優化程度讓我有點汗顔（還有很多資料過期的部分），所以就拿來改裝改裝一下，以上面的藍圖爲基礎，開始改造成自己想要的樣子 :D
 
 ## 目前改動：
+- \<head>\</head>裏面的style全部分開打包，能丟給cdn的都丟給cdn，不能丟的就打包成css導入
 - 原藍圖的[雪地](http://www.schillmania.com/projects/snowstorm/)只會在12月出現
 - [螢火蟲](https://getfirefly.org/)只會在6月出現
 - 其他月份一律都是不消耗太多資源的[canvas-nest.js](https://github.com/hustcc/canvas-nest.js/)
