@@ -1,5 +1,5 @@
 function change() {
-    document.getElementById('bgimg').style.backgroundImage = 'url(https://iw233.cn/api.php?sort=pc)';
+    document.getElementById('bgimg').style.backgroundImage = 'url(https://pic.re/image)';
 
     setInterval(function () {
         document.getElementById('bgimg').src =  document.getElementById('bgimg').src
