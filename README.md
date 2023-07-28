@@ -1,5 +1,11 @@
 ![](preview.png)
 
+![status](https://github.com/eaglePB2/school_project/actions/workflows/static.yml/badge.svg)
+<hr>
+
+### Hosted by:
+![Powered By Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
 # 🦅の網頁
 
 欢迎来到鹰の红石指令部的网页 :D  
