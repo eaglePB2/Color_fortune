@@ -4,7 +4,7 @@
 <hr>
 
 ### Hosted by:
-![Powered By Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+[![Powered By Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://eaglepb2.github.io)
 
 # 🦅の網頁
 
